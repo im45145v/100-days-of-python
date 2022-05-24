@@ -35,3 +35,16 @@ if year%4==0 :
     else:print("leap")
 else:print("not leap")
 #5
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+bill=0
+if size == "S" : bill+=15
+elif size == "M" : bill+=20
+else : bill+=25
+if add_pepperoni=="Y":
+    if size=="s":bill+=2
+    else:bill+=3
+print(f"{bill}")
+#6
