@@ -48,3 +48,23 @@ if add_pepperoni=="Y":
     else:bill+=3
 print(f"{bill}")
 #6
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+cs=name1+name2
+lcs=cs.lower()
+t=lcs.count("t")
+r=lcs.count("r")
+u=lcs.count("u")
+e=lcs.count("e")
+truee=t+r+u+e
+l=lcs.count("l")
+o=lcs.count("o")
+v=lcs.count("v")
+e=lcs.count("e")
+love=l+o+v+e
+ls=int(str(truee)+str(love))
+print(ls)
+if ls<10 or ls>90 : print("\n high")
+elif 40<=ls and 50>=ls : print("\n noice")
+else: print("\n waste")
